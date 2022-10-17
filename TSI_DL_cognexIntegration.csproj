@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE287256-9DC3-402B-933A-AAD0DF475E41}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TSI_DL_cognexIntegration</RootNamespace>
+    <AssemblyName>TSI_DL_cognexIntegration</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="System.Windows.Interactivity">
+      <HintPath>..\..\..\..\..\..\Program Files\Cognex\VisionPro Deep Learning\1.1\Cognex Deep Learning Studio\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ViDi.Cloud.Client">
+      <HintPath>..\..\..\..\..\..\Program Files\Cognex\VisionPro Deep Learning\1.1\Cognex Deep Learning Studio\ViDi.Cloud.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="ViDi.Cloud.Common">
+      <HintPath>..\..\..\..\..\..\Program Files\Cognex\VisionPro Deep Learning\1.1\Cognex Deep Learning Studio\ViDi.Cloud.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ViDi.NET">
+      <HintPath>..\..\..\..\..\..\Program Files\Cognex\VisionPro Deep Learning\1.1\Cognex Deep Learning Studio\ViDi.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="ViDi.NET.Base">
+      <HintPath>..\..\..\..\..\..\Program Files\Cognex\VisionPro Deep Learning\1.1\Cognex Deep Learning Studio\ViDi.NET.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="ViDi.NET.Common">
+      <HintPath>..\..\..\..\..\..\Program Files\Cognex\VisionPro Deep Learning\1.1\Cognex Deep Learning Studio\ViDi.NET.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ViDi.NET.Data">
+      <HintPath>..\..\..\..\..\..\Program Files\Cognex\VisionPro Deep Learning\1.1\Cognex Deep Learning Studio\ViDi.NET.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="ViDi.NET.Extensions">
+      <HintPath>..\..\..\..\..\..\Program Files\Cognex\VisionPro Deep Learning\1.1\Cognex Deep Learning Studio\ViDi.NET.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="ViDi.NET.Interfaces">
+      <HintPath>..\..\..\..\..\..\Program Files\Cognex\VisionPro Deep Learning\1.1\Cognex Deep Learning Studio\ViDi.NET.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ViDi.NET.Local">
+      <HintPath>..\..\..\..\..\..\Program Files\Cognex\VisionPro Deep Learning\1.1\Cognex Deep Learning Studio\ViDi.NET.Local.dll</HintPath>
+    </Reference>
+    <Reference Include="ViDi.NET.Logging">
+      <HintPath>..\..\..\..\..\..\Program Files\Cognex\VisionPro Deep Learning\1.1\Cognex Deep Learning Studio\ViDi.NET.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="ViDi.NET.Remote">
+      <HintPath>..\..\..\..\..\..\Program Files\Cognex\VisionPro Deep Learning\1.1\Cognex Deep Learning Studio\ViDi.NET.Remote.dll</HintPath>
+    </Reference>
+    <Reference Include="ViDi.NET.Remote.Client">
+      <HintPath>..\..\..\..\..\..\Program Files\Cognex\VisionPro Deep Learning\1.1\Cognex Deep Learning Studio\ViDi.NET.Remote.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="ViDi.NET.Training.UI">
+      <HintPath>..\..\..\..\..\..\Program Files\Cognex\VisionPro Deep Learning\1.1\Cognex Deep Learning Studio\ViDi.NET.Training.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="ViDi.NET.Training.UI.Interfaces">
+      <HintPath>..\..\..\..\..\..\Program Files\Cognex\VisionPro Deep Learning\1.1\Cognex Deep Learning Studio\ViDi.NET.Training.UI.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ViDi.NET.UI">
+      <HintPath>..\..\..\..\..\..\Program Files\Cognex\VisionPro Deep Learning\1.1\Cognex Deep Learning Studio\ViDi.NET.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="ViDi.NET.UI.Extensions">
+      <HintPath>..\..\..\..\..\..\Program Files\Cognex\VisionPro Deep Learning\1.1\Cognex Deep Learning Studio\ViDi.NET.UI.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="ViDi.NET.UI.Interfaces">
+      <HintPath>..\..\..\..\..\..\Program Files\Cognex\VisionPro Deep Learning\1.1\Cognex Deep Learning Studio\ViDi.NET.UI.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WriteableBitmapEx.Wpf">
+      <HintPath>..\..\..\..\Desktop\ABB_DTI_Aug22\UI.Core\bin\x64\Debug\WriteableBitmapEx.Wpf.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="defect.cs" />
+    <Compile Include="frmImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImage.Designer.cs">
+      <DependentUpon>frmImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="old_code\old_code.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmImage.resx">
+      <DependentUpon>frmImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="models\analyze-oct-14.vrws" />
+    <None Include="models\green-classify-256x256-oct-15.vrws" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\220920140046_dents_scratches.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
